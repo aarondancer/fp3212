@@ -1,4 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+/* #region Variables */
 :root {
   --primary-light: #44d;
   --primary: #33c;
@@ -8,7 +10,9 @@
   --lighten-01: rgba(255, 255, 255, 0.1);
   --darken-01: rgba(0, 0, 0, 0.1);
 }
+/* #endregion */
 
+/* Use border-box, reset padding and margins for everything */
 * {
   box-sizing: border-box;
   padding: 0;
@@ -24,6 +28,8 @@ body {
   flex-direction: column;
   min-height: 100vh;
 }
+
+/* #region Typography */
 
 h1,
 h2,
@@ -73,6 +79,10 @@ a:visited {
   color: var(--primary-dark);
 }
 
+/* #endregion */
+
+/* #region Header */
+
 header {
   background: var(--white);
 }
@@ -81,6 +91,9 @@ header > #logo > img {
   height: 60px;
   margin: 16px;
 }
+
+/* #endregion */
+/* #region Navigation */
 
 header > nav.main-nav {
   background: var(--primary);
@@ -112,6 +125,10 @@ header > nav.main-nav > ul > li > a {
   text-decoration: none;
 }
 
+/* #endregion */
+
+/* #region Content */
+
 section {
   margin: 16px 0;
 }
@@ -122,6 +139,9 @@ main {
   flex-grow: 1;
 }
 
+/* #endregion */
+/* #region footer */
+
 footer {
   background: var(--primary);
   padding: 16px;
@@ -130,3 +150,5 @@ footer {
 footer > address {
   margin-bottom: 8px;
 }
+
+/* #endregion */
