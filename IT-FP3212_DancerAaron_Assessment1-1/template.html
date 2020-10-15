@@ -1,0 +1,137 @@
+<!-- template.html -->
+<!-- Aaron Dancer -->
+<!-- 10/14/2020 -->
+<!--  -->
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <!--#region metadata-->
+    <meta charset="utf-8" />
+    <title>Acme, Inc - Your source for literally everything</title>
+    <meta name="description" content="The HTML5 Herald" />
+    <meta name="author" content="Aaron Dancer" />
+    <!--#endregion-->
+    <!--#region StyleSheets-->
+    <style>
+      :root {
+        --primary: #33c;
+        --white: #fff;
+        --lighten-01: rgba(255, 255, 255, 0.1);
+        --darken-01: rgba(0, 0, 0, 0.1);
+      }
+
+      * {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+      }
+
+      body {
+        display: flex;
+        background: #eee;
+        margin: 0 auto;
+        max-width: 800px;
+        font-family: sans-serif;
+        flex-direction: column;
+        min-height: 100vh;
+      }
+
+      header {
+        background: var(--white);
+      }
+
+      header > #logo > img {
+        height: 60px;
+        margin: 16px;
+      }
+
+      header > nav.main-nav {
+        background: var(--primary);
+        padding: 0 8px;
+      }
+
+      header > nav.main-nav > ul {
+        display: flex;
+        list-style-type: none;
+      }
+
+      header > nav.main-nav > ul > li {
+        display: inline-flex;
+      }
+
+      header > nav.main-nav > ul > li:hover {
+        background: var(--lighten-01);
+      }
+
+      header > nav.main-nav > ul > li:active,
+      header > nav.main-nav > ul > li:focus {
+        background: var(--darken-01);
+      }
+
+      header > nav.main-nav > ul > li > a {
+        padding: 16px;
+        color: var(--white);
+        text-decoration: none;
+      }
+
+      section {
+        margin: 16px 0;
+      }
+
+      main {
+        background: var(--white);
+        padding: 16px;
+        flex-grow: 1;
+      }
+
+      footer {
+        background: var(--primary);
+        color: var(--white);
+        padding: 16px;
+      }
+
+      footer > address {
+        margin-bottom: 8px;
+      }
+    </style>
+    <!--#endregion-->
+  </head>
+  <body>
+    <header>
+      <!-- #region Logo -->
+      <a id="logo" href="index.html">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Acme_Markets_lolo.svg"
+          alt="Acme Logo"
+        />
+      </a>
+      <!-- #endregion -->
+      <!-- #region Main Navigation -->
+      <nav class="main-nav">
+        <ul>
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+          <li>
+            <!-- Send to this section of the page, since we don't have a separate blog page -->
+            <a href="#blog">Blog</a>
+          </li>
+        </ul>
+      </nav>
+      <!-- #endregion -->
+    </header>
+    <!-- region Content -->
+    <main class="content"></main>
+    <!-- #endregion -->
+    <footer>
+      <address>
+        123 Acme Rd<br />
+        New York, NY 12345
+      </address>
+      <p id="copyright">&copy; 2020 Acme, Inc.</p>
+    </footer>
+    <!--#region Scripts-->
+    <!--#endregion-->
+  </body>
+</html>
