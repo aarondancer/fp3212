@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+/* #region Variables */
+:root {
+  --primary-light: #44d;
+  --primary: #33c;
+  --primary-dark: #22b;
+  --black: #000;
+  --white: #fff;
+  --lighten-01: rgba(255, 255, 255, 0.1);
+  --darken-01: rgba(0, 0, 0, 0.1);
+}
+/* #endregion */
+
+/* Use border-box, reset padding and margins for everything */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  background: #eee;
+  margin: 0 auto;
+  max-width: 800px;
+  font-family: "Roboto", sans-serif;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* #region Typography */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  color: var(--black);
+}
+
+.inverted * {
+  color: var(--white);
+}
+
+h1,
+h2 {
+  margin-top: 12px;
+  margin-bottom: 8px;
+}
+
+h3,
+h4 {
+  margin-top: 8px;
+  margin-bottom: 4px;
+}
+
+h5,
+h6 {
+  margin-top: 4px;
+  margin-bottom: 2px;
+}
+
+p {
+  margin-bottom: 8px;
+}
+
+a {
+  color: var(--primary);
+}
+
+a:hover {
+  color: var(--primary-light);
+}
+
+a:visited {
+  color: var(--primary-dark);
+}
+
+/* #endregion */
+
+/* #region Header */
+
+header {
+  background: var(--white);
+}
+
+header > #logo > img {
+  height: 60px;
+  margin: 16px;
+}
+
+/* #endregion */
+/* #region Navigation */
+
+header > nav.main-nav {
+  background: var(--primary);
+  padding: 0 8px;
+}
+
+header > nav.main-nav > ul {
+  display: flex;
+  list-style-type: none;
+}
+
+header > nav.main-nav > ul > li {
+  display: inline-flex;
+}
+
+header > nav.main-nav > ul > li:hover {
+  background: var(--lighten-01);
+}
+
+header > nav.main-nav > ul > li:active,
+header > nav.main-nav > ul > li.active,
+header > nav.main-nav > ul > li:focus {
+  background: var(--darken-01);
+}
+
+header > nav.main-nav > ul > li > a {
+  padding: 16px;
+  color: var(--white);
+  text-decoration: none;
+}
+
+/* #endregion */
+
+/* #region Content */
+
+section {
+  margin: 16px 0;
+}
+
+main {
+  background: var(--white);
+  padding: 16px;
+  flex-grow: 1;
+}
+
+/* #endregion */
+/* #region footer */
+
+footer {
+  background: var(--primary);
+  padding: 16px;
+}
+
+footer > address {
+  margin-bottom: 8px;
+}
+
+/* #endregion */
