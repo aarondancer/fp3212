@@ -1,0 +1,113 @@
+<!-- template.html -->
+<!-- Aaron Dancer -->
+<!-- 10/14/2020 -->
+<!--  -->
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <!--#region metadata-->
+    <meta charset="utf-8" />
+    <title>Acme, Inc - Gallery</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="The HTML5 Herald" />
+    <meta name="author" content="Aaron Dancer" />
+    <!--#endregion-->
+    <!--#region StyleSheets-->
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="gallery.css" />
+    <!--#endregion-->
+  </head>
+  <body>
+    <header>
+      <!-- #region Logo -->
+      <a id="logo" href="index.html">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Acme_Markets_lolo.svg"
+          alt="Acme Logo"
+        />
+      </a>
+      <!-- #endregion -->
+      <!-- #region Main Navigation -->
+      <nav class="main-nav inverted">
+        <ul>
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+          <li>
+            <a href="about.html">About Us</a>
+          </li>
+          <li>
+            <a href="services.html">Services</a>
+          </li>
+          <li class="active">
+            <a href="gallery.html">Gallery</a>
+          </li>
+          <li>
+            <a href="contact.html">Contact Us</a>
+          </li>
+        </ul>
+      </nav>
+      <!-- #endregion -->
+    </header>
+    <!-- region Content -->
+    <main class="content">
+      <section>
+        <h2>Gallery</h2>
+        <h3>Images</h3>
+        <div class="image-gallery">
+          <div class="gallery-item">
+            <a href="images/acme-whistle.jpg" target="_blank">
+              <img alt="Acme Whistle" src="images/acme-whistle.jpg" />
+            </a>
+          </div>
+          <div class="gallery-item">
+            <a href="images/acme-farm.jpg" target="_blank">
+              <img alt="Acme Farm Supply Building" src="images/acme-farm.jpg" />
+            </a>
+          </div>
+          <div class="gallery-item">
+            <a href="images/rabbit.jpg" target="_blank">
+              <img alt="Person in rabbit costume" src="images/rabbit.jpg" />
+            </a>
+          </div>
+          <div class="gallery-item">
+            <a href="images/roadrunner.jpg" target="_blank">
+              <img alt="Roadrunner bird" src="images/roadrunner.jpg" />
+            </a>
+          </div>
+        </div>
+        <h3>Videos</h3>
+        <div class="row">
+          <figure class="twelve column">
+            <figcaption>ACME employees hard at work:</figcaption>
+            <video controls width="100%">
+              <source src="videos/work-video.mp4" type="video/mp4" />
+              Sorry, your browser doesn't support embedded videos.
+            </video>
+          </figure>
+        </div>
+        <h3>Audio</h3>
+        <figure>
+          <figcaption>Our official background music:</figcaption>
+          <audio controls src="audio/shoepop.mp3">
+            Your browser doesn't support playing audio content.
+          </audio>
+        </figure>
+      </section>
+    </main>
+    <!-- #endregion -->
+    <footer class="inverted">
+      <address>
+        123 Acme Rd<br />
+        New York, NY 12345
+      </address>
+      <p id="copyright">&copy; 2020 Acme, Inc.</p>
+    </footer>
+    <!--#region Scripts-->
+    <!--#endregion-->
+  </body>
+</html>

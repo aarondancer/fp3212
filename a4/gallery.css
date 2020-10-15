@@ -1,0 +1,23 @@
+.image-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -8px;
+}
+
+.image-gallery > .gallery-item {
+  padding: 8px;
+  width: 50%;
+}
+
+@media only screen and (max-width: 550px) {
+  .image-gallery {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    margin: 0;
+  }
+
+  .image-gallery > .gallery-item {
+    padding: 8px 0;
+    width: 100%;
+  }
+}
