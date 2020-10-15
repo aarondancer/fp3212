@@ -1,0 +1,133 @@
+<!-- template.html -->
+<!-- Aaron Dancer -->
+<!-- 10/14/2020 -->
+<!--  -->
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <!--#region metadata-->
+    <meta charset="utf-8" />
+    <title>Acme, Inc - Contact Us</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="The HTML5 Herald" />
+    <meta name="author" content="Aaron Dancer" />
+    <!--#endregion-->
+    <!--#region StyleSheets-->
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="contact.css" />
+    <!--#endregion-->
+  </head>
+  <body>
+    <header>
+      <!-- #region Logo -->
+      <a id="logo" href="index.html">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Acme_Markets_lolo.svg"
+          alt="Acme Logo"
+        />
+      </a>
+      <!-- #endregion -->
+      <!-- #region Main Navigation -->
+      <nav class="main-nav inverted">
+        <ul>
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+          <li>
+            <a href="about.html">About Us</a>
+          </li>
+          <li>
+            <a href="services.html">Services</a>
+          </li>
+          <li>
+            <a href="gallery.html">Gallery</a>
+          </li>
+          <li class="active">
+            <a href="contact.html">Contact Us</a>
+          </li>
+        </ul>
+      </nav>
+      <!-- #endregion -->
+    </header>
+    <!-- region Content -->
+    <main class="content">
+      <section class="contact">
+        <h2>Contact Us</h2>
+        <div class="row">
+          <h4>Address</h4>
+          <address>
+            123 Acme Rd<br />
+            New York, NY 12345
+          </address>
+        </div>
+        <div class="row">
+          <h4>Email</h4>
+          <p><a href="mailto:hello@acme.acme">hello@acme.acme</a></p>
+        </div>
+        <div class="row">
+          <h4>Phone</h4>
+          <p>1-(123)-456-7890</p>
+        </div>
+        <div class="row">
+          <h4>Fax</h4>
+          <p>1-(123)-456-7891</p>
+        </div>
+      </section>
+      <section>
+        <h3>Inquery Form</h3>
+        <form action="response_page.php" method="POST">
+          <div class="field">
+            <fieldset aria-required="true">
+              <legend>What is the purpose of your inquiry?</legend>
+
+              <input type="radio" id="sales" name="reason" />
+              <label for="sales">Sales</label><br />
+
+              <input type="radio" id="services" name="reason" />
+              <label for="services">Services</label><br />
+
+              <input type="radio" id="careers" name="reason" />
+              <label for="careers">Careers</label>
+            </fieldset>
+          </div>
+          <div class="field">
+            <label for="email">What's your email address?</label>
+            <input id="email" name="email" type="email" required />
+          </div>
+          <div class="field">
+            <label for="comments">Comments</label>
+            <textarea
+              id="comments"
+              name="comments"
+              rows="5"
+              cols="33"
+              required
+            ></textarea>
+          </div>
+          <div class="field">
+            <label for="human">Are you a human?</label>
+            <select name="human" id="human">
+              <option value="robot">No</option>
+              <option value="human">Yes</option>
+            </select>
+          </div>
+          <button type="submit">Submit</button>
+        </form>
+      </section>
+    </main>
+    <!-- #endregion -->
+    <footer class="inverted">
+      <address>
+        123 Acme Rd<br />
+        New York, NY 12345
+      </address>
+      <p id="copyright">&copy; 2020 Acme, Inc.</p>
+    </footer>
+    <!--#region Scripts-->
+    <!--#endregion-->
+  </body>
+</html>

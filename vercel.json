@@ -1,0 +1,7 @@
+{
+  "functions": {
+    "a5/*.php": {
+      "runtime": "vercel-php@0.3.1"
+    }
+  }
+}

@@ -1,0 +1,15 @@
+.about table {
+  width: 100%;
+}
+
+.about table td:first-child {
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 550px) {
+  .about table tr {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 8px;
+  }
+}
